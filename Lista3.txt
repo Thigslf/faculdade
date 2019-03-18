@@ -1,0 +1,265 @@
+Algoritmo "Exercicio1"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Aldo Henrique
+// Autor(a)    : Thiago Lacerda Freitas
+// Data atual  : 14/03/2019
+Var
+// Seção de Declarações das variáveis
+   contador : inteiro
+   numero : real
+   maior: real
+   menor: real
+
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc...
+   para contador de 1 ate 15 passo 1 faca
+      escreval("Digite um numero: ")
+      leia(numero)
+      se numero > maior entao
+         maior <- numero
+      fimse
+      se (numero < menor) ou (menor = 0) entao
+         menor <- numero
+      fimse
+   fimpara
+   escreval("O maior numero digitado e: ",maior)
+   escreval("O menor numero digitado e: ",menor)
+
+Fimalgoritmo
+
+Algoritmo "Exercicio2"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Aldo Henrique
+// Autor(a)    : Thiago Lacerda Freitas
+// Data atual  : 14/03/2019
+Var
+// Seção de Declarações das variáveis
+   contador : inteiro
+   produto : inteiro
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc...
+   para contador de 0 ate 9 faca
+        produto <- contador * 9
+        escreval("9 X ", contador," =",produto)
+   fimpara
+Fimalgoritmo
+
+Algoritmo "Exercicio3"
+// Disciplina  : [Linguagem e Lógica de Programação]
+// Professor   : Aldo Henrique
+// Autor(a)    : Thiago Lacerda Freitas
+// Data atual  : 14/03/2019
+Var
+// Seção de Declarações das variáveis
+   soma : real
+   contador1 : inteiro
+   contador2 : inteiro
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc...
+   contador2 <- 1
+   para contador1 de 1 ate 99 passo 2 faca
+        soma <- soma + (contador1 / contador2)
+        contador2 <- contador2 + 1
+   fimpara
+   escreval("A soma e", soma)
+Fimalgoritmo
+
+Algoritmo "Exercicio4"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Aldo Henrique
+// Autor(a)    : Thiago Lacerda Freitas
+// Data atual  : 14/03/2019
+Var
+// Seção de Declarações das variáveis
+   contador : inteiro
+
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc...
+   para contador de 1000 ate 1999 passo 1 faca
+        se contador mod 11 = 5 entao
+           escreval("O numero",contador," dividido por 11 tem resto 5")
+        fimse
+   fimpara
+
+Fimalgoritmo
+
+Algoritmo "Exercicio5"
+// Disciplina  : [Linguagem e Lógica de Programação]
+// Professor   : Aldo Henrique
+// Autor(a)    : Thiago Lacerda Freitas
+// Data atual  : 14/03/2019
+Var
+// Seção de Declarações das variáveis
+   numero : inteiro
+   pares : inteiro
+   impares : inteiro
+
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc...
+   repita
+         escreval("Digite um numero: ")
+         leia(numero)
+         se numero mod 2 = 0 entao
+            pares <- pares + numero
+         senao
+            impares <- impares + numero
+         fimse
+   ate (numero > 1000)
+   escreval("Mostra resultado pares: ", pares)
+   escreval("Mostra resultado impares: ", impares)
+Fimalgoritmo
+
+Algoritmo "Exercicio6"
+// Disciplina  : [Linguagem e Lógica de Programação]
+// Professor   : Aldo Henrique
+// Autor(a)    : Thiago Lacerda Freitas
+// Data atual  : 14/03/2019
+Var
+// Seção de Declarações das variáveis
+   numero1 : real
+   numero2 : real
+   numero3 : real
+   soma    : real
+   produto : real
+   media   : real
+
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc...
+   repita
+         escreval("Digite um numero: ")
+         leia(numero1)
+         escreval("Digite um numero: ")
+         leia(numero2)
+         escreval("Digite um numero: ")
+         leia(numero3)
+         soma <- numero1 + numero2 + numero3
+         produto <- numero1 * numero2 * numero3
+         media <- (numero1 + numero2 + numero3) / 3
+         escreval("Mostrar resultado da soma ",soma)
+         escreval("Mostrar resultado do produto ",produto)
+         escreval("Mostrar resultado da media ",media)
+   ate ((numero1 > numero2) ou (numero2 > numero3) ou (numero1 > numero3))
+Fimalgoritmo
+
+Algoritmo "Exercicio7"
+// Disciplina  : [Linguagem e Lógica de Programação]
+// Professor   : Aldo Henrique
+// Autor(a)    : Thiago Lacerda Freitas
+// Data atual  : 14/03/2019
+Var
+// Seção de Declarações das variáveis
+   numero : real
+   contador : inteiro
+   soma : real
+   maior : real
+   menor : real
+   media : real
+
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc...
+   repita
+         escreval("Digite um numero: ")
+         leia(numero)
+         se numero > maior entao
+            maior <- numero
+         fimse
+         se (numero > 0) e ((numero < menor) ou (menor = 0)) entao
+            menor <- numero
+         fimse
+         se numero > 0 entao
+            soma <- soma + numero
+            contador <- contador + 1
+         fimse
+   ate (numero < 0)
+   media <- soma / contador
+   escreval("O maior e ", maior)
+   escreval("O menor e ", menor)
+   escreval("A media e ", media)
+Fimalgoritmo
+
+Algoritmo "Exercicio8"
+// Disciplina  : [Linguagem e Lógica de Programação]
+// Professor   : Aldo Henrique
+// Autor(a)    : Thiago Lacerda Freitas
+// Data atual  : 14/03/2019
+Var
+// Seção de Declarações das variáveis
+   numero : inteiro
+   contador : inteiro
+
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc...
+   escreval("Digite um numero: ")
+   leia(numero)
+   escreval("Pares... ")
+   para contador de 1 ate numero faca
+        se contador mod 2 = 0 entao
+           escreva(contador)
+        fimse
+   fimpara
+   escreval
+   escreval("impares... ")
+   para contador de 1 ate numero faca
+        se contador mod 2 > 0 entao
+           escreva(contador)
+        fimse
+   fimpara
+Fimalgoritmo
+
+Algoritmo "Exercicio9"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Aldo Henrique
+// Autor(a)    : Thiago Lacerda Freitas
+// Data atual  : 14/03/2019
+Var
+// Seção de Declarações das variáveis
+   contador : inteiro
+   numero : inteiro
+   primo  : inteiro
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc...
+   escreval ("Digite um numero")
+   leia(numero)
+   primo <- 0
+   para contador de 1 ate numero faca
+        se(numero mod contador = 0) entao
+           primo <- primo + 1
+        fimse
+   fimpara
+   se (primo > 2) entao
+      escreva("Esse numero não é primo")
+   senao
+      escreva("Esse numero é primo")
+   fimse
+Fimalgoritmo
+
+Algoritmo "Exercicio10"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Aldo Henrique
+// Autor(a)    : Thiago Lacerda Freitas
+// Data atual  : 14/03/2019
+Var
+// Seção de Declarações das variáveis 
+  contador1: inteiro
+  contador2: inteiro
+  numero: inteiro
+  primo: inteiro
+  
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+escreval("Digite um numero:")
+leia(numero)
+para contador1 de 1 ate numero faca
+     primo <- 0
+     para contador2 de 1 ate contador1 faca
+          se(contador1 mod contador2 =0) entao
+          primo <- primo + 1
+          fimse
+     fimpara
+     se(primo =2)entao
+        escreva(contador1)
+     fimse
+fimpara
+Fimalgoritmo
+
+
