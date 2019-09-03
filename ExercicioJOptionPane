@@ -1,0 +1,16 @@
+import javax.swing.JOptionPane;
+package carteiramotorista;
+public class CarteiraMotorista {
+    public static void main(String[] args) {        
+        String nome = JOptionPane.showInputDialog (null,"Qual o seu nome?","Questionario",JOptionPane.QUESTION_MESSAGE);
+        String txt = JOptionPane.showInputDialog (null,"Quantos anos você tem?","Questionario",JOptionPane.QUESTION_MESSAGE);
+         int idade = Integer.parseInt(txt);
+         if(idade >= 18){
+         JOptionPane.showMessageDialog (null,nome + ", você já pode tirar a CNH","Informação",JOptionPane.QUESTION_MESSAGE);
+         }
+         else if (idade < 18){
+            JOptionPane.showMessageDialog (null,nome + ", você ainda não pode tirar a CNH","Informação",JOptionPane.QUESTION_MESSAGE);
+        }             
+    }
+    
+}
